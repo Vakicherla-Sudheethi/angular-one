@@ -1,0 +1,29 @@
+<!-- Update your component's HTML file (e.g., get-all-books.component.html) -->
+
+<div class="container">
+    <div class="tile" *ngFor="let book of bookss">
+      <h1>{{ book.title }}</h1>
+      <table>
+        <tr>
+          <th>Book ID:</th>
+          <td>{{ book.bookId }}</td>
+        </tr>
+        <tr>
+          <th>Author:</th>
+          <td>{{ book.author }}</td>
+        </tr>
+        <tr>
+          <th>ISBN:</th>
+          <td>{{ book.isbn }}</td>
+        </tr>
+        <tr>
+          <th>Publish Date:</th>
+          <td>{{ book.publishDate | date:'short' }}</td>
+        </tr>
+      </table>
+      <button class="btn btn-danger" (click)="delete(book.bookId)">Delete</button>
+      <!-- Uncomment the line below if you want to navigate to a details page -->
+      <!-- <button class="btn btn-primary" (click)="getId(book.bookId)">Details</button> -->
+    </div>
+  </div>
+  

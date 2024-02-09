@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="book-form" style="width: 50%;">
+        <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && addBook()">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" name="title" [(ngModel)]="book.title" required
+                    #title="ngModel" [ngClass]="{ 'is-invalid': f.submitted && title.errors }" />
+                <div *ngIf="f.submitted && title.errors" class="invalid-feedback">
+                    <div *ngIf="title.errors['required']">Title is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Author</label>
+                <input type="text" class="form-control" name="author" [(ngModel)]="book.author" required
+                    #author="ngModel" [ngClass]="{ 'is-invalid': f.submitted && author.errors }" />
+                <div *ngIf="f.submitted && author.errors" class="invalid-feedback">
+                    <div *ngIf="author.errors['required']">Author is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Genre</label>
+                <input type="text" class="form-control" name="genre" [(ngModel)]="book.genre" required
+                    #genre="ngModel" [ngClass]="{ 'is-invalid': f.submitted && genre.errors }" />
+                <div *ngIf="f.submitted && genre.errors" class="invalid-feedback">
+                    <div *ngIf="genre.errors['required']">Genre is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>ISBN</label>
+                <input type="text" class="form-control" name="isbn" [(ngModel)]="book.isbn" required
+                    #isbn="ngModel" [ngClass]="{ 'is-invalid': f.submitted && isbn.errors }" />
+                <div *ngIf="f.submitted && isbn.errors" class="invalid-feedback">
+                    <div *ngIf="isbn.errors['required']">ISBN is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Publish Date</label>
+                <input type="datetime-local" class="form-control" name="publishDate" [(ngModel)]="book.publishDate" required
+                    #publishDate="ngModel" [ngClass]="{ 'is-invalid': f.submitted && publishDate.errors }" />
+                <div *ngIf="f.submitted && publishDate.errors" class="invalid-feedback">
+                    <div *ngIf="publishDate.errors['required']">Publish Date is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add Book</button>
+            </div>
+        </form>
+    </div>
+</div>
