@@ -5,6 +5,7 @@ import { Book } from '../../Models/book';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { HttpHeaders } from '@angular/common/http';
+
 @Component({
   selector: 'app-add-new-book',
   standalone: true,
@@ -26,6 +27,7 @@ constructor(private http: HttpClient, private router: Router)
 }
 addBook()
 {
+ 
   this.http
   .post('http://localhost:5037/AddBook',this.book,this.httpOptions)
   .subscribe((response) =>

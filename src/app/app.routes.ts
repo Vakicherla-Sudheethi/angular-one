@@ -10,6 +10,7 @@ import { GetBookByTitleComponent } from './Pages/get-book-by-title/get-book-by-t
 import { LoginComponent } from './Pages/login/login.component';
 import { RegisterComponent } from './Pages/register/register.component';
 import { UpdateBookComponent } from './Pages/update-book/update-book.component';
+
 import { UserGetAllBooksComponent } from './Pages/user-get-all-books/user-get-all-books.component';
 
 export const routes: Routes = [
@@ -22,6 +23,7 @@ export const routes: Routes = [
             {path:'add-new-book',component:AddNewBookComponent},
             {path:'get-all-books',component:GetAllBooksComponent},
             {path:'search/:bid',component:UpdateBookComponent},
+           
         ]
     },
 
