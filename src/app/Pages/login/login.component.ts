@@ -33,7 +33,7 @@ export class LoginComponent {
     let login = { email: this.user.email, password: this.user.password };
     console.log(login);
     this.http
-      .post('http://localhost:5037/api/User/Validate',login,this.httpOptions)
+      .post('http://localhost:5037/api/User/Validate',login)
       .subscribe((response) => {
         this.httpResponse = response;
         console.log(this.httpResponse);

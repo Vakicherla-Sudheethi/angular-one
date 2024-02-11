@@ -1,0 +1,40 @@
+/* Add your existing styles here */
+
+.nav-button {
+    background-color: #ffdab9; /* Peach color */
+    color: #ff69b4; /* Pink color */
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #ffc0cb; /* Lighter Peach color on hover */
+  }
+  
+  /* styles.css */
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-button {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.nav-button:hover {
+  background-color: #0056b3;
+}

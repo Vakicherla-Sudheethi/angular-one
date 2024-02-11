@@ -1,1 +1,34 @@
-<p>get-book-by-author works!</p>
+
+<input [(ngModel)]="author" placeholder="Enter author name" />
+<button (click)="authorName()">Search</button>
+
+<!-- get-book-by-author.component.html -->
+
+<div class="tiles-container">
+  <div class="tile" *ngFor="let book of books">
+    <h1>{{ book.title }}</h1>
+    <table>
+      <tr>
+        <th>Author:</th>
+        <td>{{ book.author }}</td>
+      </tr>
+      <tr>
+        <th>Genre:</th>
+        <td>{{book.genre}}</td>
+      </tr>
+      <tr>
+        <th>ISBN:</th>
+        <td>{{ book.isbn }}</td>
+      </tr>
+      <tr>
+        <th>Publish Date:</th>
+        <td>{{ book.publishDate | date:'short' }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+
+

@@ -1,9 +1,5 @@
-<input [(ngModel)]="genre" placeholder="Enter Genre " />
-<button (click)="genreName()">Search</button>
-
-
-<div class="tiles-container">
-    <div class="tile" *ngFor="let book of books">
+<div class="container">
+    <div class="tile" *ngFor="let book of bookss">
       <h1>{{ book.title }}</h1>
       <table>
         <tr>
@@ -23,7 +19,5 @@
           <td>{{ book.publishDate | date:'short' }}</td>
         </tr>
       </table>
-    </div>
-  </div>
-  
-  
+      </div>
+</div>

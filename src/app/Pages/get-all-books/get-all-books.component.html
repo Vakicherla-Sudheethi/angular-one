@@ -5,12 +5,12 @@
       <h1>{{ book.title }}</h1>
       <table>
         <tr>
-          <th>Book ID:</th>
-          <td>{{ book.bookId }}</td>
-        </tr>
-        <tr>
           <th>Author:</th>
           <td>{{ book.author }}</td>
+        </tr>
+        <tr>
+          <th>Genre:</th>
+          <td>{{book.genre}}</td>
         </tr>
         <tr>
           <th>ISBN:</th>
@@ -22,6 +22,7 @@
         </tr>
       </table>
       <button class="btn btn-danger" (click)="delete(book.bookId)">Delete</button>
+      <button class="btn btn-primary" (click)="edit(book.bookId)">Edit</button>
       <!-- Uncomment the line below if you want to navigate to a details page -->
       <!-- <button class="btn btn-primary" (click)="getId(book.bookId)">Details</button> -->
     </div>

@@ -31,7 +31,7 @@ addBook()
   .subscribe((response) =>
   {
     console.log(response);
-    //this.router.navigateByUrl('admin-dashboard/get-all-cities');
+    this.router.navigateByUrl('admin-dashboard/get-all-books');
   });
   
 }

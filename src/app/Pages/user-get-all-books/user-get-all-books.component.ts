@@ -6,13 +6,13 @@ import { HttpHeaders } from '@angular/common/http';
 import { Book } from '../../Models/book';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-get-all-books',
+  selector: 'app-user-get-all-books',
   standalone: true,
   imports: [CommonModule, HttpClientModule],
-  templateUrl: './get-all-books.component.html',
-  styleUrl: './get-all-books.component.css'
+  templateUrl: './user-get-all-books.component.html',
+  styleUrl: './user-get-all-books.component.css'
 })
-export class GetAllBooksComponent {
+export class UserGetAllBooksComponent {
   bookss: Book[] = [];
   httpOptions = {
     headers: new HttpHeaders({
@@ -31,22 +31,5 @@ getAllBooks()
         this.bookss = response;
         console.log(this.bookss);
       });
-}
-delete(id: any) {
-  
-  console.log(id);
-  this.http
-    .delete('http://localhost:5037/DeleteBook/' + id,this.httpOptions)
-    .subscribe((response) => {
-      console.log(response);
-    });
-   this.getAllBooks(); 
-   location.reload(); 
-}
-
-edit(id:any)
-{
-  
-  this.router.navigateByUrl('admin-dashboard/search/'+ id );
 }
 }

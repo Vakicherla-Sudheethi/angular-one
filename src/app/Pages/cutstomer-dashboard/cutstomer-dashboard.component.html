@@ -1,1 +1,28 @@
-<p>cutstomer-dashboard works!</p>
+<div class="container-fluid" id="main">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-md-3 col-lg-2 sidebar-offcanvas bg-light pl-0" id="sidebar" role="navigation">
+        <ul class="nav flex-column sticky-top pl-0 pt-5 mt-3">
+          <li class="nav-item">
+            <button class="nav-button" [routerLink]="'user-get-all-books'">Get All Books</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-button" [routerLink]="'get-book-by-author'">Search Book By Author</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-button" [routerLink]="'get-book-by-genre'">Search Book By Genre</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-button" [routerLink]="'get-book-by-title'">Search Book By Title</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-button" (click)="logOut()">LogOut</button>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="col main pt-5 mt-3">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  
