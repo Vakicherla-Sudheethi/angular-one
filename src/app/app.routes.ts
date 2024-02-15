@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { IntroComponent } from './intro/intro.component';
 import { AddNewBookComponent } from './Pages/add-new-book/add-new-book.component';
 import { AdminDashboardComponent } from './Pages/admin-dashboard/admin-dashboard.component';
 import { CutstomerDashboardComponent } from './Pages/cutstomer-dashboard/cutstomer-dashboard.component';
@@ -37,8 +36,8 @@ export const routes: Routes = [
          {path:'get-book-by-title',component:GetBookByTitleComponent}
         ]
     },
-    {path: '',component: IntroComponent},
     {path:'register',component:RegisterComponent},
+    {path:'',component:LoginComponent},
     {path:'login',component:LoginComponent},
    
 ];

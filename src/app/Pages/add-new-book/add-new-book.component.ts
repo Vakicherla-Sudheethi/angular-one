@@ -34,6 +34,10 @@ addBook()
   {
     console.log(response);
     this.router.navigateByUrl('admin-dashboard/get-all-books');
+  },
+  (error) => {
+    console.error('Error adding book:', error);
+  
   });
   
 }

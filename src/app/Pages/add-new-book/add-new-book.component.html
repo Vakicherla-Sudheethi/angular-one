@@ -34,11 +34,28 @@
                 </div>
             </div>
             <div class="form-group">
+                <label>Publisher</label>
+                <input type="text" class="form-control" name="publisher" [(ngModel)]="book.publisher" required
+                    #publisher="ngModel" [ngClass]="{ 'is-invalid': f.submitted && publisher.errors }" />
+                <div *ngIf="f.submitted && publisher.errors" class="invalid-feedback">
+                    <div *ngIf="publisher.errors['required']">Publisher Name is required</div>
+                </div>
+            </div>
+            
+            <div class="form-group">
                 <label>Publish Date</label>
                 <input type="datetime-local" class="form-control" name="publishDate" [(ngModel)]="book.publishDate" required
                     #publishDate="ngModel" [ngClass]="{ 'is-invalid': f.submitted && publishDate.errors }" />
                 <div *ngIf="f.submitted && publishDate.errors" class="invalid-feedback">
                     <div *ngIf="publishDate.errors['required']">Publish Date is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Copies</label>
+                <input type="text" class="form-control" name="copies" [(ngModel)]="book.copies" required
+                    #copies="ngModel" [ngClass]="{ 'is-invalid': f.submitted && copies.errors }" />
+                <div *ngIf="f.submitted && copies.errors" class="invalid-feedback">
+                    <div *ngIf="copies.errors['required']">Copies Count is required</div>
                 </div>
             </div>
             

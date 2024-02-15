@@ -1,43 +1,44 @@
-/* Add this CSS to your component's styles or in your global styles file */
+/* styles.css */
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .tile {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 20px;
-    width: 300px; /* You can adjust the width as needed */
-    background-color: #fff;
-  }
-  
-  .tile h1 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  table {
-    width: 100%;
-  }
-  
-  th {
-    text-align: left;
-    padding-right: 10px;
-    color: #555;
-  }
-  
-  td {
-    padding: 5px 0;
-  }
-  
-  /* Optional: Add hover effect */
-  .tile:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.tile {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 15px;
+  width: 45%;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

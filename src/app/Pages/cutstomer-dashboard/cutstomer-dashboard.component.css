@@ -1,22 +1,13 @@
-/* Add your existing styles here */
-
-body {
-    height: 500%;
-    margin: 0;
-    background: url('https://c0.wallpaperflare.com/preview/757/248/881/blur-book-stack-books-bookshelves.jpg') 100% 100% no-repeat fixed; 
-    background-size: cover;
-  }
-  
   .container {
-    height: 100vh; /* Set the height to 100% of the viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content vertically */
+    align-items: center; 
   }
   
   .nav-button {
-    background-color: #ffdab9; /* Peach color */
-    color: #ff69b4; /* Pink color */
+    background-color: #ffdab9; 
+    color: #ff69b4; 
     border: none;
     padding: 10px;
     margin: 5px;
@@ -26,14 +17,13 @@ body {
   }
   
   .nav-item {
-    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-bottom: 10px;
   }
   
   .nav-button:hover {
-    background-color: #ffc0cb; /* Lighter Peach color on hover */
+    background-color: #ffc0cb;
   }
-  
-  /* styles.css */
+ 
   
   .nav-item {
     margin-bottom: 10px;
@@ -45,22 +35,22 @@ body {
     text-align: center;
     font-size: 16px;
     border: none;
-    background-color: #007bff;
+    background-color:brown;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
   }
   
-  /* Hover effect for buttons */
+
   .nav-button:hover {
-    background-color: #0056b3;
+    background-color: burlywood;
   }
   
-  /* Add your existing styles here */
+  
   
   .nav-button {
-    color: #ff69b4; /* Pink color */
+    color: #ff69b4; 
     border: none;
     padding: 10px;
     margin: 5px;
@@ -70,10 +60,10 @@ body {
   }
   
   .nav-button:hover {
-    background-color: rgba(255, 218, 185, 0.8); /* Lighter Peach color on hover with some transparency */
+    background-color: rgba(255, 218, 185, 0.8); 
   }
   
-  /* styles.css */
+ 
   
   .nav-item {
     margin-bottom: 10px;
@@ -91,8 +81,8 @@ body {
     transition: background-color 0.3s ease-in-out;
   }
   
-  /* Hover effect for buttons */
+  
   .nav-button:hover {
-    background-color: rgba(0, 123, 255, 0.8); /* Lighter Blue color on hover with some transparency */
+    background-color: burlywood; 
   }
   

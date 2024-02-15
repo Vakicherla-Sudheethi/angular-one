@@ -17,8 +17,16 @@
           <td>{{ book.isbn }}</td>
         </tr>
         <tr>
+          <th>Publisher:</th>
+          <td>{{ book.publisher }}</td>
+        </tr>
+        <tr>
           <th>Publish Date:</th>
           <td>{{ book.publishDate | date:'short' }}</td>
+        </tr>
+        <tr>
+          <th>No Of Copies:</th>
+          <td>{{ book.copies }}</td>
         </tr>
       </table>
       <button class="btn btn-danger" (click)="delete(book.bookId)">Delete</button>

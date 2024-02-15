@@ -5,5 +5,7 @@ export class Book {
     public isbn?:string;
     public publishDate?:Date;
     public genre?:string;
-    public uploadImg: any;
+    public publisher?:string;
+    public copies?:number;
+
 }

@@ -40,11 +40,23 @@
             </td>
         </tr>
         <tr>
+            <td>Publisher</td>
+            <td>
+                <input type="text" [(ngModel)]="book.publisher" class="form-control">
+            </td>
+        </tr>
+        <tr>
             <td>publish Date</td>
             <td>
               <input type="datetime-local" [ngModel]="book.publishDate" class="form-control">
             </td>
           </tr>
+          <tr>
+            <td>Copies</td>
+            <td>
+                <input type="number" [(ngModel)]="book.copies" class="form-control">
+            </td>
+        </tr>
           <tr>
             <td colspan="2">
                 <button class="btn btn-primary" (click)="edit(book.bookId)">Edit</button> &nbsp;

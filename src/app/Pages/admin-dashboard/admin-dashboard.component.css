@@ -66,7 +66,7 @@ h1 {
   text-align: center;
   font-size: 16px;
   border: none;
-  background-color: #007bff;
+  background-color: brown;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -75,7 +75,7 @@ h1 {
 
 /* Hover effect for buttons */
 .nav-button:hover {
-  background-color: #0056b3;
+  background-color:burlywood;
 }
 
 footer {

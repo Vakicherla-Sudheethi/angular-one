@@ -21,8 +21,16 @@
         <td>{{ book.isbn }}</td>
       </tr>
       <tr>
+        <th>publisher:</th>
+        <td>{{ book.publisher }}</td>
+      </tr>
+      <tr>
         <th>Publish Date:</th>
         <td>{{ book.publishDate | date:'short' }}</td>
+      </tr>
+      <tr>
+        <th>Copies:</th>
+        <td>{{ book.copies }}</td>
       </tr>
     </table>
   </div>
